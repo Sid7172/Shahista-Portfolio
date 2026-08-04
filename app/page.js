@@ -148,7 +148,7 @@ export default function Home() {
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
               I help brands build high-performing content systems that drive engagement,
-              audience growth, and qualified leads across the UK, UAE, Hong Kong, and India.
+              audience growth, and qualified leads across the Hong Kong and India.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
