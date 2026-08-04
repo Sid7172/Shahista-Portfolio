@@ -1,123 +1,347 @@
-const skills = ['Customer Support', 'Email Handling', 'Chat Support', 'Order Processing', 'Teamwork', 'Problem Solving', 'Decision Making', 'Quick Learning', 'Marathi', 'Hindi', 'English'];
 
-const projects = [
+
+
+import Image from 'next/image';
+
+const stats = [
+  { value: '3+ Yrs', label: 'Content Strategy' },
+  { value: '1,000+', label: 'Single-Day Inquiries' },
+  { value: '10,089', label: 'Flash Product Sales' },
+  { value: '150+', label: 'Creators Onboarded' },
+  { value: '1.2M+', label: 'Community Reach' },
+  { value: '30%', label: 'C-Suite Lead Win Rate' },
+];
+
+const services = [
   {
-    title: 'Customer Support Analytics',
-    desc: 'Track customer issues, response time, and common query categories.',
-    points: ['Analyze support tickets and query categories.', 'Create summary reports for team performance.', 'Show insights using charts and tables.'],
+    title: 'Content Strategy & Systems',
+    desc: 'End-to-end content frameworks, editorial calendars, brand messaging, and multi-channel planning.',
   },
   {
-    title: 'Order Tracking Report',
-    desc: 'Focus on shipping and delivery updates, delays, and process gaps.',
-    points: ['Track delivery status and pending orders.', 'Identify delay patterns.', 'Present findings in a clean dashboard style format.'],
+    title: 'Short-Form Video & Reels',
+    desc: 'Short-form video hooks, scripts, and storytelling systems designed to drive engagement and reach.',
+  },
+  {
+    title: 'Social Media Growth',
+    desc: 'Plan and execute organic growth campaigns, community engagement strategies, and platform-specific content optimization.',
+  },
+  {
+    title: 'Personal Branding & Outreach',
+    desc: 'LinkedIn positioning, executive outreach, creator management, and authority-building campaigns.',
   },
 ];
 
+const caseStudies = [
+  {
+    tag: 'Content Strategy • Hong Kong',
+    title: '72 Dragons',
+    desc: 'I developed a content strategy centered on film history, Cannes Film Festival coverage, and arts-focused storytelling. The approach combined SEO articles, social posts, festival highlights, and cross-cultural narratives to attract both art lovers and cinema audiences.',
+    metric1: 'Boosted Cannes Films Festival Engagement',
+    metric2: 'UAE-wide Brand Presence',
+  },
+  {
+    tag: 'Content Strategy  • Maharashtra, India',
+    title: 'A2Z IT Hub',
+    desc: 'Created a structured content plan focused on brand communication, social media consistency, and audience-first messaging. The approach included content scheduling, performance tracking, and regular optimization based on engagement trends to drive inquiries.',
+    metric1: '1500 Inquiries in 1 Day',
+    metric2: '250% Engagement Boost',
+  },
+  {
+    tag: 'Content Strategy • Pune, India',
+    title: 'Brand Make Media',
+    desc: 'Designed a launch content system combining urgency-driven reels, product showcase storytelling, and multi-channel distribution for one of our Client.',
+    metric1: '10,089 Units Sold',
+    metric2: 'Higher audience engagement',
+  },
+  {
+    tag: 'Community & Branding • London, UK',
+    title: 'Rocket Room',
+    desc: 'Built a creator content engine using Gifted.Social and onboarded lifestyle and F&B creators for launch momentum.',
+    metric1: '150+ Creators Onboarded',
+    metric2: 'Massive UGC Output',
+  },
+];
+
+const experience = [
+  {
+    role: 'Digital Marketing Lead',
+    company: '72 Dragons (Remote)',
+    time: 'Dec 2023 – July 2026',
+    place: 'Hong Kong & Shanghai',
+    points: [
+      'Led Arts Division social media content strategy with a focus on film, Cannes, and cultural storytelling.',
+      'Created social content covering Cannes Film Festival and cinema trends.',
+      'Improved audience engagement through international art and film-focused content campaigns.',
+    ],
+  },
+  {
+    role: 'Social Media Team Lead',
+    company: 'A2Z IT Hub',
+    time: 'June 2022 – Oct 2023',
+    place: 'India',
+    points: [
+      'Handled social media strategy, content scheduling, and audience engagement for the company.',
+      'Managed day-to-day social media operations and maintained consistent brand communication.',
+      'Created content plans and monitored performance to improve reach and visibility.',
+    ],
+  },
+  {
+    role: 'Social Media Executive',
+    company: 'Brand Make Media',
+    time: 'Feb 2022 – Apr 2023',
+    place: 'Pune, India',
+    points: [
+      'Handled social media strategy, content scheduling, and audience engagement for the brand.',
+      'Managed day-to-day social media operations and maintained consistent brand communication.',
+      'Coordinated with creative teams to improve reach, visibility, and engagement.',
+    ],
+  },
+];
+
+const skills = [
+  'Content Strategy',
+  'Brand Positioning',
+  'Storytelling',
+  'Short-Form Video',
+  'Community Management',
+  'Creator Partnerships',
+  'Personal Branding',
+  'LinkedIn Outreach',
+  'GA4',
+  'Meta Business Suite',
+  'SEMrush',
+  'Canva',
+];
+
+const brands = ['72 Dragons Films', 'A2Z IT Hub', 'Brand Make'];
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white">
-      <div className="mx-auto max-w-6xl px-6 py-8">
-        <header className="flex flex-col gap-4 border-b border-white/10 pb-8 md:flex-row md:items-center md:justify-between">
+    <main className="bg-[#07111f] text-white">
+      <section className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-8">
+        <header className="flex items-center justify-between border-b border-white/10 pb-6">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-violet-300">Portfolio</p>
-            <h1 className="mt-2 text-3xl font-extrabold md:text-5xl">Shahista Inamdar</h1>
-            <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300 md:text-base">
-              Self-motivated professional with customer support experience, strong communication skills, and a growing interest in data analysis, reporting, and technology-driven work.
-            </p>
+            <p className="text-sm uppercase tracking-[0.35em] text-cyan-300">Portfolio</p>
+            <h1 className="mt-2 text-2xl font-bold md:text-4xl">Shahista Inamdar</h1>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
-            <p className="text-sm text-slate-300">Contact</p>
-            <p className="mt-1 font-medium">8237278860</p>
-            <p className="text-sm text-slate-300">shahistai0312@gmail.com</p>
-            <p className="text-sm text-slate-300">Ahmednagar, Maharashtra</p>
-          </div>
+          <a
+            href="#contact"
+            className="rounded-full border border-cyan-400/40 px-4 py-2 text-sm text-cyan-200 transition hover:bg-cyan-400 hover:text-slate-950"
+          >
+            Contact
+          </a>
         </header>
 
-        <section className="grid gap-6 py-10 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-bold">About Me</h2>
-            <p className="mt-4 leading-7 text-slate-300">
-              I am Shahista Inamdar, a B.Sc. Computer Science graduate with customer support experience. I enjoy learning fast, solving problems, and working in team environments. My goal is to grow into a data-focused and analytical role.
+        <div className="grid flex-1 gap-10 py-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
+              Content Strategy Specialist • Social Media Growth Leader
             </p>
-          </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-bold">Skills</h2>
-            <div className="mt-4 flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <span key={skill} className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200">
-                  {skill}
-                </span>
+            <h2 className="mt-5 max-w-4xl text-4xl font-black leading-tight md:text-6xl">
+              Turning content into{' '}
+              <span className="bg-gradient-to-r from-cyan-300 via-emerald-400 to-teal-400 bg-clip-text text-transparent">
+                predictable growth
+              </span>{' '}
+              and brand authority.
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
+              I help brands build high-performing content systems that drive engagement,
+              audience growth, and qualified leads across the UK, UAE, Hong Kong, and India.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#case-studies"
+                className="rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                View Case Studies
+              </a>
+              <a
+                href="#contact"
+                className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+              >
+                Let’s Connect
+              </a>
+            </div>
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+              {stats.map((item) => (
+                <div key={item.label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p className="text-2xl font-bold text-white">{item.value}</p>
+                  <p className="mt-1 text-sm text-slate-300">{item.label}</p>
+                </div>
               ))}
             </div>
           </div>
-        </section>
 
-        <section className="py-4" id="projects">
-          <h2 className="text-2xl font-bold">Projects</h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-2">
-            {projects.map((project) => (
-              <article key={project.title} className="rounded-3xl border border-white/10 bg-white/5 p-6">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="mt-3 text-slate-300">{project.desc}</p>
-                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
-                  {project.points.map((p) => (
-                    <li key={p}>{p}</li>
-                  ))}
-                </ul>
-              </article>
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/20 to-violet-500/10 p-6 shadow-2xl shadow-cyan-500/10">
+            <div className="flex flex-col gap-6">
+              {/* PROFILE PHOTO ADDED HERE */}
+              <div className="mx-auto overflow-hidden rounded-[1.8rem] border border-white/10 bg-slate-950/60 shadow-xl">
+                <Image
+                  src="/prof.png"
+                  alt="Shahista Inamdar"
+                  width={360}
+                  height={420}
+                  className="h-[420px] w-[360px] object-cover"
+                  priority
+                />
+              </div>
+
+              {/* ABOUT SECTION ADDED BELOW PHOTO */}
+              <div className="rounded-[1.5rem] border border-white/10 bg-slate-950/60 p-6">
+                <p className="text-sm uppercase tracking-[0.25em] text-cyan-300">About</p>
+                <h3 className="mt-3 text-2xl font-bold text-white">
+                  Building high-performing content systems
+                </h3>
+                <p className="mt-4 leading-7 text-slate-300">
+                  My approach blends strategic marketing, storytelling, and measurable execution.
+                  From creator-led launches to executive branding, I design content that creates
+                  real business outcomes.
+                </p>
+
+                <div className="mt-6 space-y-3 text-sm text-slate-200">
+                  <p>• B.Sc. in Computer Science</p>
+                  <p>• IAB Media Foundations Certified</p>
+                  <p>• 30% C-Suite Lead Conversion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-6">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Core Services</p>
+          <h3 className="mt-3 text-2xl font-bold md:text-3xl">What I do best</h3>
+          <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {services.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-white/10 bg-slate-950/50 p-5">
+                <h4 className="text-lg font-semibold">{item.title}</h4>
+                <p className="mt-3 text-sm leading-7 text-slate-300">{item.desc}</p>
+              </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="grid gap-6 py-10 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-bold">Experience</h2>
-            <div className="mt-4">
-              <p className="font-semibold">Customer Support Associate</p>
-              <p className="text-sm text-slate-300">Utturkar’s Wood Culture, Swargate, Pune</p>
-              <p className="text-sm text-slate-300">Jan 2023 – Jul 2023</p>
-              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
-                <li>Assisted senior customer service agents in managing inquiries.</li>
-                <li>Responded to customer emails and chats.</li>
-                <li>Processed customer orders and shared shipping updates.</li>
-              </ul>
-            </div>
+      <section id="case-studies" className="mx-auto max-w-7xl px-6 py-10">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Featured Work</p>
+            <h3 className="mt-3 text-2xl font-bold md:text-3xl">Case studies</h3>
           </div>
+        </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-bold">Education</h2>
-            <div className="mt-4 space-y-4 text-sm text-slate-300">
-              <div>
-                <p className="font-semibold text-white">B.Sc. (Computer Science)</p>
-                <p>New Arts, Commerce & Science College, Ahmednagar, Pune University</p>
-                <p>58.31% • 2019</p>
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+          {caseStudies.map((item) => (
+            <article key={item.title} className="rounded-3xl border border-white/10 bg-white/5 p-6">
+              <p className="text-sm text-cyan-300">{item.tag}</p>
+              <h4 className="mt-3 text-2xl font-bold">{item.title}</h4>
+              <p className="mt-4 leading-7 text-slate-300">{item.desc}</p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-2xl bg-slate-950/60 p-4">
+                  <p className="text-sm text-slate-400">Impact</p>
+                  <p className="mt-1 font-semibold">{item.metric1}</p>
+                </div>
+                <div className="rounded-2xl bg-slate-950/60 p-4">
+                  <p className="text-sm text-slate-400">Result</p>
+                  <p className="mt-1 font-semibold">{item.metric2}</p>
+                </div>
               </div>
-              <div>
-                <p className="font-semibold text-white">HSC</p>
-                <p>Shri Dhokeshwar Junior College, Takli Dhokeshwar</p>
-                <p>65.67% • 2015</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-10">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Career Timeline</p>
+          <h3 className="mt-3 text-2xl font-bold md:text-3xl">Work experience</h3>
+          <div className="mt-8 space-y-6">
+            {experience.map((job) => (
+              <div key={job.role} className="rounded-2xl border border-white/10 bg-slate-950/50 p-5">
+                <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
+                  <div>
+                    <h4 className="text-xl font-semibold">{job.role}</h4>
+                    <p className="text-cyan-300">{job.company}</p>
+                  </div>
+                  <p className="text-sm text-slate-400">
+                    {job.time} • {job.place}
+                  </p>
+                </div>
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-slate-300">
+                  {job.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </div>
-              <div>
-                <p className="font-semibold text-white">SSC</p>
-                <p>Shri Dhokeshwar Vidyalaya, Takli Dhokeshwar</p>
-                <p>72.20% • 2013</p>
-              </div>
-            </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="rounded-3xl border border-white/10 bg-gradient-to-r from-violet-600/20 to-cyan-500/10 p-6">
-          <h2 className="text-2xl font-bold">Career Objective</h2>
-          <p className="mt-3 max-w-4xl leading-7 text-slate-200">
-            To secure an opportunity in a challenging environment where I can apply my communication, customer handling, and learning skills while growing into a data-focused professional role.
+      <section className="mx-auto max-w-7xl px-6 py-10">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Skills</p>
+          <h3 className="mt-3 text-2xl font-bold md:text-3xl">Growth toolkit</h3>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {skills.map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full border border-white/10 bg-slate-950/60 px-4 py-2 text-sm text-slate-200"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-10">
+        <div className="rounded-3xl border border-white/10 bg-gradient-to-r from-cyan-500/10 to-violet-500/10 p-6 md:p-8">
+          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Brands & Communities</p>
+          <h3 className="mt-3 text-2xl font-bold md:text-3xl">Selected brands handled</h3>
+          <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {brands.map((brand) => (
+              <div
+                key={brand}
+                className="rounded-2xl border border-white/10 bg-slate-950/50 p-4 text-slate-200"
+              >
+                {brand}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="mx-auto max-w-7xl px-6 py-10">
+        <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 md:p-8">
+          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Contact</p>
+          <h3 className="mt-3 text-2xl font-bold md:text-3xl">Ready to scale your brand?</h3>
+          <p className="mt-4 max-w-3xl leading-7 text-slate-300">
+            Whether you need content strategy, creator partnerships, social media growth, or
+            executive branding, I’m available for collaboration.
           </p>
-        </section>
-
-        <footer className="py-10 text-center text-sm text-slate-400">
-          © 2026 Shahista Inamdar. Built with Next.js and Tailwind CSS.
-        </footer>
-      </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            <div className="rounded-2xl bg-slate-950/60 p-4">
+              <p className="text-sm text-slate-400">Email</p>
+              <p className="mt-1 font-medium">shahistai0312@gmail.com</p>
+            </div>
+            <div className="rounded-2xl bg-slate-950/60 p-4">
+              <p className="text-sm text-slate-400">Phone</p>
+              <p className="mt-1 font-medium">+91 8237278860</p>
+            </div>
+            <div className="rounded-2xl bg-slate-950/60 p-4">
+              <p className="text-sm text-slate-400">Base</p>
+              <p className="mt-1 font-medium">Pune, Maharashtra, India</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
