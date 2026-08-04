@@ -56,9 +56,9 @@ const caseStudies = [
   {
     tag: 'Community & Branding • India',
     title: 'Utturkars Wood Culture',
-    desc: 'Built a creator content engine using Gifted.Social and onboarded lifestyle and F&B creators for launch momentum.',
-    metric1: '150+ Creators Onboarded',
-    metric2: 'Massive UGC Output',
+    desc: 'Drove customer acquisition through digital marketing, helping the brand convert online visibility into real leads.',
+    metric1: '150+ Customers Onboarded',
+    metric2: 'Higher Lead Generation',
   },
 ];
 
