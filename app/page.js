@@ -107,9 +107,7 @@ const skills = [
   'Creator Partnerships',
   'Personal Branding',
   'LinkedIn Outreach',
-  'GA4',
   'Meta Business Suite',
-  'SEMrush',
   'Canva',
 ];
 
