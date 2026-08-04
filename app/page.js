@@ -111,7 +111,7 @@ const skills = [
   'Canva',
 ];
 
-const brands = ['72 Dragons Films', 'A2Z IT Hub', 'Brand Make'];
+const brands = ['72 Dragons Films', 'A2Z IT Hub', 'Brand Make',"Utturkar's Wood Culture"];
 
 export default function Home() {
   return (
