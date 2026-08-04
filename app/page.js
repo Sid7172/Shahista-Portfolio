@@ -37,7 +37,7 @@ const caseStudies = [
     title: '72 Dragons',
     desc: 'I developed a content strategy centered on film history, Cannes Film Festival coverage, and arts-focused storytelling. The approach combined SEO articles, social posts, festival highlights, and cross-cultural narratives to attract both art lovers and cinema audiences.',
     metric1: 'Boosted Cannes Films Festival Engagement',
-    metric2: 'UAE-wide Brand Presence',
+    metric2: 'International Films',
   },
   {
     tag: 'Content Strategy  • Maharashtra, India',
@@ -54,8 +54,8 @@ const caseStudies = [
     metric2: 'Higher audience engagement',
   },
   {
-    tag: 'Community & Branding • London, UK',
-    title: 'Rocket Room',
+    tag: 'Community & Branding • India',
+    title: 'Utturkars Wood Culture',
     desc: 'Built a creator content engine using Gifted.Social and onboarded lifestyle and F&B creators for launch momentum.',
     metric1: '150+ Creators Onboarded',
     metric2: 'Massive UGC Output',
