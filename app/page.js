@@ -4,10 +4,10 @@
 import Image from 'next/image';
 
 const stats = [
-  { value: '3+ Yrs', label: 'Content Strategy' },
-  { value: '1,000+', label: 'Single-Day Inquiries' },
-  { value: '10,089', label: 'Flash Product Sales' },
-  { value: '150+', label: 'Creators Onboarded' },
+  { value: '3+Years', label: 'Content Strategy' },
+  { value: '500+', label: 'Single-Day Inquiries' },
+  //{ value: '10,089', label: 'Flash Product Sales' },
+  { value: '50+', label: 'Creators Onboarded' },
   { value: '1.2M+', label: 'Community Reach' },
   { value: '30%', label: 'C-Suite Lead Win Rate' },
 ];
@@ -43,21 +43,21 @@ const caseStudies = [
     tag: 'Content Strategy  • Maharashtra, India',
     title: 'A2Z IT Hub',
     desc: 'Created a structured content plan focused on brand communication, social media consistency, and audience-first messaging. The approach included content scheduling, performance tracking, and regular optimization based on engagement trends to drive inquiries.',
-    metric1: '1500 Inquiries in 1 Day',
-    metric2: '250% Engagement Boost',
+    metric1: '500+ Inquiries in 1 Day',
+    metric2: '87% Engagement Boost',
   },
   {
     tag: 'Content Strategy • Pune, India',
     title: 'Brand Make Media',
     desc: 'Designed a launch content system combining urgency-driven reels, product showcase storytelling, and multi-channel distribution for one of our Client.',
-    metric1: '10,089 Units Sold',
+    metric1: '1200+ Units Sold',
     metric2: 'Higher audience engagement',
   },
   {
-    tag: 'Community & Branding • India',
+    tag: 'Community & Branding • Pune, India',
     title: 'Utturkars Wood Culture',
     desc: 'Drove customer acquisition through digital marketing, helping the brand convert online visibility into real leads.',
-    metric1: '150+ Customers Onboarded',
+    metric1: '120+ Customers Onboarded',
     metric2: 'Higher Lead Generation',
   },
 ];
@@ -92,7 +92,7 @@ const experience = [
     place: 'Pune, India',
     points: [
       'Handled social media strategy, content scheduling, and audience engagement for the brand.',
-      'Managed day-to-day social media operations and maintained consistent brand communication.',
+      'Supported audience engagement through regular posting and brand interaction.',
       'Coordinated with creative teams to improve reach, visibility, and engagement.',
     ],
   },
