@@ -33,21 +33,21 @@ const services = [
 
 const caseStudies = [
   {
-    tag: 'Content Strategy • Hong Kong',
+    tag: 'Social Media • Hong Kong',
     title: '72 Dragons',
     desc: 'I developed a content strategy centered on film history, Cannes Film Festival coverage, and arts-focused storytelling. The approach combined SEO articles, social posts, festival highlights, and cross-cultural narratives to attract both art lovers and cinema audiences.',
     metric1: 'Boosted Cannes Films Festival Engagement',
     metric2: 'International Films',
   },
   {
-    tag: 'Content Strategy  • Maharashtra, India',
+    tag: 'Content Stratergy • Maharashtra, India',
     title: 'A2Z IT Hub',
     desc: 'Created a structured content plan focused on brand communication, social media consistency, and audience-first messaging. The approach included content scheduling, performance tracking, and regular optimization based on engagement trends to drive inquiries.',
     metric1: '500+ Inquiries in 1 Day',
     metric2: '87% Engagement Boost',
   },
   {
-    tag: 'Content Strategy • Pune, India',
+    tag: 'Social Media • Pune, India',
     title: 'Brand Make Media',
     desc: 'Designed a launch content system combining urgency-driven reels, product showcase storytelling, and multi-channel distribution for one of our Client.',
     metric1: '1200+ Units Sold',
@@ -64,7 +64,7 @@ const caseStudies = [
 
 const experience = [
   {
-    role: 'Digital Marketing Lead',
+    role: 'Social Media Specialist',
     company: '72 Dragons (Remote)',
     time: 'Dec 2023 – July 2026',
     place: 'Hong Kong & Shanghai',
@@ -133,7 +133,7 @@ export default function Home() {
         <div className="grid flex-1 gap-10 py-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
-              Content Strategy Specialist • Social Media Growth Leader
+              Social Media Specialist • Social Media Growth Leader
             </p>
 
             <h2 className="mt-5 max-w-4xl text-4xl font-black leading-tight md:text-6xl">
@@ -202,8 +202,8 @@ export default function Home() {
 
                 <div className="mt-6 space-y-3 text-sm text-slate-200">
                   <p>• B.Sc. in Computer Science</p>
-                  <p>• IAB Media Foundations Certified</p>
-                  <p>• 30% C-Suite Lead Conversion</p>
+                  <p>• Digital Marketing Certified from Advanto Software</p>
+                  {/* <p>• 30% C-Suite Lead Conversion</p> */}
                 </div>
               </div>
             </div>
