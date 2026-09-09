@@ -66,7 +66,7 @@ const experience = [
   {
     role: 'Social Media Specialist',
     company: '72 Dragons (Remote)',
-    time: 'Dec 2023 – July 2026',
+    time: 'Nov 2024 – July 2026',
     place: 'Hong Kong & Shanghai',
     points: [
       'Led Arts Division social media content strategy with a focus on film, Cannes, and cultural storytelling.',
@@ -77,7 +77,7 @@ const experience = [
   {
     role: 'Social Media Team Lead',
     company: 'A2Z IT Hub',
-    time: 'June 2022 – Oct 2023',
+    time: 'Nov 2023 – Oct 2024',
     place: 'India',
     points: [
       'Handled social media strategy, content scheduling, and audience engagement for the company.',
@@ -88,7 +88,7 @@ const experience = [
   {
     role: 'Social Media Executive',
     company: 'Brand Make Media',
-    time: 'Feb 2022 – Apr 2023',
+    time: 'Mar 2023 – Oct 2023',
     place: 'Pune, India',
     points: [
       'Handled social media strategy, content scheduling, and audience engagement for the brand.',
